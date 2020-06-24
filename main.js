@@ -1,6 +1,6 @@
 // Team contributing:  Lorne Jenkins, Jeri MIller and Kahlil Enmond
 
-const mainElement = document.querySelector('.kata-list')
+const mainElement = document.querySelector(`.kata-list`)
 
 const sampleArray = [
     469, 755, 244, 245, 758, 450, 302, 20, 712, 71,
@@ -10,7 +10,7 @@ const sampleArray = [
 // /KATA 1
 const kata1Heading = document.createElement('h3')
 mainElement.append(kata1Heading)
-kata1Heading.append('Kata 1 : \r')
+kata1Heading.append(`Kata 1 : \r`)
 
 var kata1Array = [];
 for (let counter = 1; counter <= 20; counter++) {
@@ -21,7 +21,7 @@ kata1Heading.append(kata1Array)
 // KATA 2
 const kata2Heading = document.createElement('h3')
 mainElement.append(kata2Heading)
-kata2Heading.append('Kata 2: \r')
+kata2Heading.append(`Kata 2: \r`)
 
 for (counter = 2; counter <= 20; counter += 2) {
     kata2Heading.append(counter)
@@ -31,7 +31,7 @@ for (counter = 2; counter <= 20; counter += 2) {
 
 const kata3Heading = document.createElement('h3')
 mainElement.append(kata3Heading)
-kata3Heading.append('Kata 3: \r')
+kata3Heading.append(`Kata 3: \r1`)
 for (counter = 1; counter <= 20; counter += 2) {
     kata3Heading.append(counter)
 }
@@ -41,7 +41,7 @@ for (counter = 1; counter <= 20; counter += 2) {
 
 const kata4Heading = document.createElement('h3')
 mainElement.append(kata4Heading)
-kata4Heading.append('Kata 4: \r')
+kata4Heading.append(`Kata 4: \r`)
 
 for (counter = 5; counter <= 100; counter += 5) {
     kata4Heading.append(counter)
@@ -50,7 +50,7 @@ for (counter = 5; counter <= 100; counter += 5) {
 
 const kata5Heading = document.createElement('h3')
 mainElement.append(kata5Heading)
-kata5Heading.append('KATA 5: \r')
+kata5Heading.append(`KATA 5: \r`)
 
 for (let counter = 1; counter <= 10; counter += 1) {
     kata5Heading.append(counter * counter);
@@ -60,7 +60,7 @@ for (let counter = 1; counter <= 10; counter += 1) {
 
 const kata6Heading = document.createElement('h3')
 mainElement.append(kata6Heading)
-kata6Heading.append('Kata 6: \r')
+kata6Heading.append(`Kata 6: \r`)
 
 for (counter = 20; counter >= 1; counter -= 1) {
     kata6Heading.append(counter)
@@ -70,7 +70,7 @@ for (counter = 20; counter >= 1; counter -= 1) {
 
 const kata7Heading = document.createElement('h3')
 mainElement.append(kata7Heading)
-kata7Heading.append('Kata 7 : \r')
+kata7Heading.append(`Kata 7 : \r`)
 
 for (counter = 20; counter >= 1; counter -= 2) {
     kata7Heading.append(counter)
@@ -81,7 +81,7 @@ for (counter = 20; counter >= 1; counter -= 2) {
 
 const kata8Heading = document.createElement('h3')
 mainElement.append(kata8Heading)
-kata8Heading.append('Kata 8: \r')
+kata8Heading.append(`Kata 8: \r`)
 
 for (counter = 19; counter >= 1; counter -= 2) {
     kata8Heading.append(counter)
@@ -92,7 +92,7 @@ for (counter = 19; counter >= 1; counter -= 2) {
 
 const kata9Heading = document.createElement('h3')
 mainElement.append(kata9Heading)
-kata9Heading.append('Kata 9: \r')
+kata9Heading.append(`Kata 9: \r`)
 
 for (counter = 100; counter >= 1; counter -= 5)
     kata9Heading.append(counter)
@@ -101,7 +101,7 @@ for (counter = 100; counter >= 1; counter -= 5)
 // KATA 10
 const kata10Heading = document.createElement('h3')
 mainElement.append(kata10Heading)
-kata10Heading.append('Kata 10: \r')
+kata10Heading.append(`Kata 10: \r`)
 
 counter10 = 10
 for (let counter = 10; counter >= 1; counter -= 1) {
@@ -123,9 +123,9 @@ kata12Heading.append('Kata 12: ')
 
 let newArray = []
 
-for(counter = 2; counter <= sampleArray.length; counter ++ ) {
+for(counter = 0; counter <= sampleArray.length; counter ++ ) {
     let sampleArrayElement = sampleArray[counter]
-    if (sampleArrayElement % 2) {
+    if (sampleArrayElement % 2 ===0) {
         newArray.push(sampleArrayElement)
     }
 }
@@ -155,10 +155,10 @@ let kata14Array = []
 for(counter = 0; counter <= sampleArray.length; counter ++ ) {
     let sampleArrayElement = sampleArray[counter]
     // if (sampleArrayElement % 2) {
-       newArray.push(sampleArrayElement * sampleArrayElement)
+       kata14Array.push(sampleArrayElement * sampleArrayElement)
     }
     
-kata14Heading.append(newArray)
+kata14Heading.append(kata14Array)
 
 
 // Kata 15
@@ -178,8 +178,8 @@ const kata16Heading = document.createElement('h3')
 mainElement.append(kata16Heading)
 kata16Heading.append(`Kata 16: \r`)
 let numSumkata16 = 0
-for (counter = -1; counter < sampleArray.length; counter++) {
-    numSumkata16 = numSum + sampleArray[counter]
+for (counter = 0; counter < sampleArray.length; counter++) {
+    numSumkata16 = numSumkata16 + sampleArray[counter]
 }
 kata16Heading.append(numSumkata16)
 
